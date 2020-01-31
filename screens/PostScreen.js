@@ -1,10 +1,11 @@
 import React from 'react'
-import { View, Text ,StyleSheet} from 'react-native'
+import { View, Text ,StyleSheet,Button} from 'react-native'
 
-const PostScreen = () => {
+const PostScreen = props => {
     return (
         <View style={styles.container}>
             <Text>Post Screen</Text>
+            <Button title="back" onPress={()=>{props.navigation.goBack()}}/>
         </View>
     )
 }
